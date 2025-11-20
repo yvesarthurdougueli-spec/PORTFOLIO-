@@ -1,11 +1,30 @@
-body { font-family: Arial, sans-serif; margin:0; padding:0; background:#111; color:#F1F1F1; }
-header { background:#0D0D0D; padding:10px 20px; }
-nav ul { display:flex; list-style:none; gap:20px; }
-nav a { color:#F1F1F1; text-decoration:none; }
-.hero { text-align:center; padding:50px; }
-.hero img { width:150px; border-radius:50%; }
-.btn { display:inline-block; margin:10px; padding:10px 20px; background:#00A8E8; color:#fff; text-decoration:none; border-radius:5px; }
-section { padding:40px 20px; }
-article { margin-bottom:30px; }
-form input, form textarea { display:block; margin-bottom:10px; width:100%; padding:8px; border-radius:4px; border:none; }
-form button { padding:10px 20px; background:#00A8E8; color:#fff; border:none; border-radius:5px; cursor:pointer; }
+/* Police et reset */
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f5f5; color:#111; }
+a { text-decoration:none; color:#00A8E8; transition: color 0.3s; }
+a:hover { color:#007bb5; }
+
+/* Header */
+header { background:#ffffff; padding:15px 30px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+nav ul { display:flex; list-style:none; gap:20px; justify-content:center; margin:0; padding:0; }
+nav a { font-weight: bold; }
+
+/* Hero / Accueil */
+.hero { text-align:center; padding:60px 20px; background:#e0f7fa; }
+.hero img { width:150px; border-radius:50%; border:3px solid #00A8E8; }
+.hero h1 { margin:20px 0 10px; color:#007bb5; }
+.hero h2 { margin:0 0 20px; color:#004d66; }
+.btn { display:inline-block; margin:10px; padding:12px 25px; background:#00A8E8; color:#fff; border-radius:5px; font-weight:bold; }
+.btn:hover { background:#007bb5; }
+
+/* Sections */
+section { padding:60px 20px; max-width:1000px; margin:0 auto; }
+section:nth-child(even) { background:#ffffff; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.05); margin-bottom:40px; }
+
+/* Projects */
+article { margin-bottom:30px; background:#e3f2fd; padding:20px; border-radius:10px; }
+article h2 { color:#004d66; }
+
+/* Formulaire */
+form input, form textarea { display:block; margin-bottom:15px; width:100%; padding:12px; border-radius:6px; border:1px solid #ccc; }
+form button { padding:12px 25px; background:#00A8E8; color:#fff; border:none; border-radius:5px; cursor:pointer; font-weight:bold; }
+form button:hover { background:#007bb5; }
